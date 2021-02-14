@@ -1,0 +1,595 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .owl-panel-item {
+    width: 50vw !important;
+    &.regular {
+      .mask {
+        width: 50vw !important;
+        .banner {
+          width: 50vw !important;
+        }
+        &:hover {
+          .top {
+            width: 50vw !important;
+          }
+          .bottom {
+            width: 50vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.22rem !important;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 3.5vw !important;
+      h2 {
+        font-size: 1.7rem !important;
+        margin: -7px 0 !important;
+      }
+    }
+  }
+  .albums {
+    .border-subtitle {
+      margin-top: 1rem;
+      padding-top: 0.6rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+    h6 {
+      &.subtitle {
+        line-height: 16px !important;
+      }
+    }
+  }
+  .modal-photo {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0 4vw !important;
+    padding-top: 10vh !important;
+    padding-bottom: 2vh !important;
+    overflow-y: scroll;
+    .close {
+      top: 3vh !important;
+      right: 6vw !important;
+    }
+    h1 {
+      margin-top: 1rem;
+      width: 100% !important;
+      font-size: large;
+      letter-spacing: 1px !important;
+      text-align: center;
+    }
+    .detail {
+      .label {
+        font-size: medium !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.1rem !important;
+      }
+      h5 {
+        font-size: medium !important;
+      }
+    }
+    .sub-top {
+      margin-top: 1rem;
+      .comments {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      .favourite {
+        width: 50%;
+        justify-content: center;
+      }
+    }
+    .sub-bottom {
+      padding-top: 0 !important;
+      margin-top: 0.6rem;
+    }
+  }
+  .list-comment {
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .users {
+    .profile {
+      padding: 5vh 0.8rem !important;
+      &.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      h1 {
+        text-align: center;
+        line-height: 3.5rem;
+      }
+    }
+    .maps {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 650px) {
+  .owl-panel-item {
+    width: 35vw !important;
+    &.regular {
+      .mask {
+        width: 35vw !important;
+        .banner {
+          width: 35vw !important;
+        }
+        &:hover {
+          .top {
+            width: 35vw !important;
+          }
+          .bottom {
+            width: 35vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.52rem;
+          }
+        }
+      }
+      &.title {
+        padding: 0 3.5vw !important;
+        h2 {
+          font-size: 1.6rem !important;
+          margin: -7px 0 !important;
+        }
+      }
+    }
+  }
+  .albums {
+    .border-subtitle {
+      margin-top: 1rem;
+      padding-top: 0.6rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+    h6 {
+      &.subtitle {
+        line-height: 16px !important;
+      }
+    }
+  }
+  .list-comment {
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .users {
+    .profile {
+      padding: 5vh 0.8rem !important;
+      &.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      h1 {
+        text-align: center;
+        line-height: 3.5rem;
+      }
+    }
+    .maps {
+      margin-top: 3rem;
+    }
+  }
+}
+@media only screen and (min-device-width: 650px) and (max-device-width: 768px) {
+  .owl-panel-item {
+    width: 30vw !important;
+    &.regular {
+      .mask {
+        width: 30vw !important;
+        .banner {
+          width: 30vw !important;
+        }
+        &:hover {
+          .top {
+            width: 30vw !important;
+          }
+          .bottom {
+            width: 30vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.52rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 2.5vw !important;
+      h2 {
+        font-size: 1.8rem !important;
+        margin: -10px 0 !important;
+      }
+    }
+  }
+  .albums {
+    .border-subtitle {
+      margin-top: 1rem;
+      padding-top: 0.6rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+    h6 {
+      &.subtitle {
+        line-height: 16px !important;
+      }
+    }
+  }
+
+  .modal-photo {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0 4vw !important;
+    padding-top: 10vh !important;
+    padding-bottom: 2vh !important;
+    overflow-y: scroll;
+    .close {
+      top: 3vh !important;
+      right: 6vw !important;
+    }
+    h1 {
+      margin-top: 1rem;
+      width: 100% !important;
+      font-size: xx-large;
+      letter-spacing: 1px !important;
+      text-align: center;
+    }
+    .detail {
+      .label {
+        font-size: large !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.1rem !important;
+      }
+      h5 {
+        font-size: large !important;
+      }
+    }
+    .sub-top {
+      margin-top: 1rem;
+      .comments {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      .favourite {
+        width: 50%;
+        justify-content: center;
+      }
+    }
+    .sub-bottom {
+      padding-top: 0 !important;
+      margin-top: 0.6rem;
+    }
+  }
+
+  .list-comment {
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .users {
+    .profile {
+      &.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      h1 {
+        text-align: center !important;
+      }
+    }
+    .maps {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 970px) {
+  .owl-panel-item {
+    width: 23vw !important;
+    &.regular {
+      .mask {
+        width: 23vw !important;
+        .banner {
+          width: 23vw !important;
+        }
+        &:hover {
+          .top {
+            width: 23vw !important;
+          }
+          .bottom {
+            width: 23vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.52rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 2vw !important;
+      h2 {
+        font-size: 1.7rem !important;
+        margin: -10px 0 !important;
+      }
+    }
+  }
+  .modal-photo {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0 4vw !important;
+    padding-top: 10vh !important;
+    padding-bottom: 2vh !important;
+    overflow-y: scroll;
+    .close {
+      top: 3vh !important;
+      right: 6vw !important;
+    }
+    h1 {
+      margin-top: 1rem;
+      width: 100% !important;
+      font-size: xx-large;
+      font-weight: bold;
+      letter-spacing: 2px !important;
+    }
+    .detail {
+      .label {
+        font-size: large !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.1rem !important;
+      }
+      h5 {
+        font-size: large !important;
+      }
+    }
+    .sub-top {
+      margin-top: 1rem;
+      .comments {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      .favourite {
+        width: 50%;
+        justify-content: center;
+      }
+    }
+    .sub-bottom {
+      padding-top: 0 !important;
+      margin-top: 0.6rem;
+    }
+  }
+
+  .users {
+    .profile {
+      &.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      h1 {
+        text-align: center !important;
+      }
+    }
+    .maps {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 970px) and (max-device-width: 1024px) {
+  .owl-panel-item {
+    width: 18vw !important;
+    &.regular {
+      .mask {
+        width: 18vw !important;
+        .banner {
+          width: 18vw !important;
+        }
+        &:hover {
+          .top {
+            width: 18vw !important;
+          }
+          .bottom {
+            width: 18vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.52rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 1.5vw !important;
+      h2 {
+        font-size: 1.7rem !important;
+        margin: -10px 0 !important;
+      }
+    }
+  }
+  .modal-photo {
+    h1 {
+      margin-top: 1rem;
+      width: 100% !important;
+      font-size: xx-large;
+      letter-spacing: 2px !important;
+    }
+  }
+  .users {
+    .profile {
+      padding: 2.5rem 2vw !important;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1440px) {
+  .owl-panel-item {
+    width: 18vw !important;
+    &.regular {
+      .mask {
+        width: 18vw !important;
+        .banner {
+          width: 18vw !important;
+        }
+        &:hover {
+          .top {
+            width: 18vw !important;
+          }
+          .bottom {
+            width: 18vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.52rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 1.5vw !important;
+      h2 {
+        margin: -10px 0 !important;
+      }
+    }
+  }
+  // .modal-photo {
+  //   h1 {
+  //     margin-top: 1rem;
+  //     width: 100% !important;
+  //     font-size: large !important;
+  //     font-weight: bold;
+  //     letter-spacing: 2px !important;
+  //   }
+  // }
+}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1920px) {
+  .owl-panel-item {
+    width: 15vw !important;
+    &.regular {
+      .mask {
+        width: 15vw !important;
+        .plus {
+          .button-expand {
+            width: 1.7vw !important;
+            height: 1.7vw !important;
+          }
+        }
+        .banner {
+          width: 15vw !important;
+        }
+        &:hover {
+          .top {
+            width: 15vw !important;
+          }
+          .bottom {
+            width: 15vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.68rem;
+          }
+        }
+      }
+      &.title {
+        padding: 0 1.5vw;
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
+  .owl-panel-item {
+    width: 13vw !important;
+    &.regular {
+      .mask {
+        width: 13vw !important;
+        .plus {
+          .button-expand {
+            width: 1.7vw !important;
+            height: 1.7vw !important;
+          }
+        }
+        .banner {
+          width: 13vw !important;
+        }
+        &:hover {
+          .top {
+            width: 13vw !important;
+          }
+          .bottom {
+            width: 13vw !important;
+          }
+        }
+        label {
+          &.foot {
+            font-size: 0.82rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 1vw;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 2560px) and (max-device-width: 3840px) {
+  .owl-panel-item {
+    width: 14vw !important;
+    &.regular {
+      .mask {
+        width: 14vw !important;
+        .plus {
+          .button-expand {
+            width: 1.9vw !important;
+            height: 1.9vw !important;
+          }
+        }
+        .banner {
+          width: 14vw !important;
+        }
+        &:hover {
+          .top {
+            width: 14vw !important;
+          }
+          .bottom {
+            width: 14vw !important;
+          }
+        }
+        label {
+          &.foot {
+            padding: 1rem 0;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    &.title {
+      padding: 0 1.2vw;
+      h2 {
+        font-size: 3.5rem !important;
+      }
+    }
+  }
+}

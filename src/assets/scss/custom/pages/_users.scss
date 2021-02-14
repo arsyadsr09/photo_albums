@@ -1,0 +1,48 @@
+.users {
+  .profile {
+    width: 100vw;
+    min-height: 50vh;
+    background-color: #f1f2f6;
+    padding: 2.5rem 8vw;
+    display: flex;
+    align-items: center;
+    &.row {
+      margin-left: 0 !important;
+    }
+    h1 {
+      font-family: "Roboto", sans-serif;
+      color: #57606f;
+      font-weight: 700;
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .label {
+      color: #747d8c;
+      font-size: medium;
+      font-weight: 400;
+      font-family: "Roboto", sans-serif;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    h5 {
+      font-family: "Roboto", sans-serif;
+      color: #57606f;
+      text-transform: capitalize;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .maps {
+    height: 50vh;
+    width: 100%;
+  }
+}

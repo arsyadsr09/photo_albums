@@ -1,0 +1,26 @@
+.list-comment {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  img {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border: 1px solid #ced6e0;
+    border-radius: 3rem;
+    padding: 0.2rem;
+    background-color: white !important;
+  }
+  .col {
+    margin-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    color: #57606f;
+    small {
+      margin-top: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+  }
+}

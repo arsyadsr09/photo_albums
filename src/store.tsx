@@ -3,7 +3,7 @@ import { persistStore, persistReducer } from "redux-persist"
 import storage from "redux-persist/lib/storage"
 import thunk from "redux-thunk"
 
-import reducers from "./modules/reducers"
+import { rootReducer } from "./modules"
 
 declare global {
   interface Window {
@@ -11,13 +11,15 @@ declare global {
   }
 }
 
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["pokemon"],
+  whitelist: ["albums", "photos", "users", "subPhotos"],
 }
 
-const persistedReducer = persistReducer(persistConfig, reducers)
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const store = createStore(persistedReducer, applyMiddleware(thunk))
 const persistor = persistStore(store)

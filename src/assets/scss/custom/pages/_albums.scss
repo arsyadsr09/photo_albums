@@ -1,0 +1,95 @@
+.albums {
+  h1 {
+    &.album-title {
+      color: white;
+      font-family: "Sarina", cursive;
+      text-align: center;
+    }
+  }
+
+  .border-subtitle {
+    width: 100%;
+    background-color: #2f3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h6 {
+    &.subtitle {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      line-height: 11px;
+      letter-spacing: 3px !important;
+      text-align: center;
+    }
+  }
+
+  .btn-next {
+    width: 45px;
+    height: 30px;
+    padding-bottom: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      transform: scale(1.1);
+    }
+  }
+
+  .container-grid {
+    margin: 10vh 5vw;
+    .photo {
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      .mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        transition: all 0.4s ease;
+        border-radius: 150px;
+        .content {
+          transition: all 0.2s ease;
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .mask {
+          top: -50px;
+          right: -50px;
+          background-color: #2f354266;
+          transition: all 0.4s ease;
+          width: 250px;
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          .content {
+            transition: all 0.2s ease;
+            opacity: 1;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

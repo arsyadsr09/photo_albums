@@ -1,0 +1,60 @@
+.favourite {
+  .header {
+    width: 100vw;
+    min-height: 30vh;
+    padding: 2.5rem 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-weight: 700;
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+  }
+  .photo {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    .mask {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      transition: all 0.4s ease;
+      border-radius: 400px;
+      .content {
+        transition: all 0.2s ease;
+        opacity: 0;
+      }
+    }
+    &:hover {
+      .mask {
+        top: -75px;
+        right: -75px;
+        background-color: #2f354266;
+        transition: all 0.4s ease;
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .content {
+          transition: all 0.2s ease;
+          opacity: 1;
+          color: white;
+        }
+      }
+    }
+  }
+  .content {
+    padding: 10vh 10vw;
+  }
+}
