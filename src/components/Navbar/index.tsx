@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useCallback } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -9,11 +9,12 @@ import {
   faExchangeAlt,
 } from "@fortawesome/free-solid-svg-icons"
 import Autocomplete from "react-autocomplete"
+import { Link } from "react-router-dom"
+import debounce from "lodash.debounce"
 import {
   clearFilteredAlbums,
   setFilteredAlbums,
 } from "../../modules/albums/action"
-import { Link } from "react-router-dom"
 
 export const NavbarStyled = styled.div`
   padding: 2rem 5rem;
@@ -34,7 +35,7 @@ export default (props: any) => {
   //== mode 0 : name | mode 1 : user
   const [mode, setMode] = useState(0)
 
-  useEffect(() => {}, [state.albums.dataFiltered])
+  useEffect(() => {}, [state.albums.dataFiltered, searchController])
 
   const onSearchByName = (value: string) => {
     if (value.length <= 0) {
@@ -42,9 +43,20 @@ export default (props: any) => {
       dispatch(clearFilteredAlbums())
     } else {
       setSearchController(value)
-      dispatch(setFilteredAlbums(value))
+      onDebounce(value)
     }
   }
+  const onSelect = (value: string) => {
+    setSearchController(value)
+    onDebounce(value)
+  }
+
+  const onDebounce = useCallback(
+    debounce((value) => {
+      dispatch(setFilteredAlbums(value))
+    }, 500),
+    [searchController]
+  )
 
   const onClearClicked = () => {
     setSearchController("")
@@ -67,7 +79,7 @@ export default (props: any) => {
             <div className="text">{mode === 0 ? "Album Name" : "User name"}</div>
             <FontAwesomeIcon
               size="lg"
-              className="icon"
+              className="icon"b
               color={mode === 0 ? "#1e90ff" : "#ff4757"}
               icon={faExchangeAlt}
               title={`Change to ${mode === 0 ? "User" : "Album"}`}
@@ -106,7 +118,7 @@ export default (props: any) => {
               )}
               value={searchController}
               onChange={(e) => onSearchByName(e.target.value)}
-              onSelect={(val) => onSearchByName(val)}
+              onSelect={(val) => onSelect(val)}
             />
           </div>
           <div

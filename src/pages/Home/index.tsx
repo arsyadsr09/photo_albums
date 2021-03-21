@@ -54,7 +54,11 @@ export default () => {
           style={{ width: "100%" }}
           stagePadding={50}
           dots={false}
-          loop={state.albums.dataFiltered.length > 0 ? false : true}
+          loop={
+            state.albums.dataFiltered && state.albums.dataFiltered.length > 0
+              ? false
+              : true
+          }
           autoWidth
           nav
           navText={[
@@ -86,7 +90,8 @@ export default () => {
 
                       <div className="owl-panel-item title">
                         <div>
-                          <h2>RESULTS.</h2>
+                          <h2>OUR</h2>
+                          <h2>ALBUMS.</h2>
                         </div>
                       </div>
                     </>

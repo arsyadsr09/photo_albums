@@ -24,6 +24,8 @@ export const getAlbums = () => async (
 
     const { data } = response
 
+    console.log(data)
+
     const getRandomInt = (max: number) => {
       return Math.floor(Math.random() * Math.floor(max))
     }
